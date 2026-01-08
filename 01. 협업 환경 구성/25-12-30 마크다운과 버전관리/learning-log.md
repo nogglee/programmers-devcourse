@@ -60,14 +60,6 @@ VCS의 종류는 로컬 / 중앙집중형 / 분산형 이렇게 3가지로 구�
 
 # 실습결과
 
-1. Installed Git History
-   <img width="3840" height="1532" alt="image" src="https://github.com/user-attachments/assets/b74057e3-a5fa-44bc-848c-f8cf272cc049" />
-
-2. `ls` `cd` `mkdir`
-   <img width="1108" height="532" alt="image" src="https://github.com/user-attachments/assets/9e5472c4-c57f-4748-96a0-f79efacff521" />
-
-3. `status` `init` `add`
-   <img width="1286" height="578" alt="image" src="https://github.com/user-attachments/assets/dd8dc9c8-d79e-480a-b372-8ef5963f7e27" />
-
-4. `commit` `log`
-   <img width="1088" height="742" alt="image" src="https://github.com/user-attachments/assets/f99d6e12-d333-4704-993d-0308ed35c075" />
+1. md 파일 생성
+   
+   <img width="1918" height="926" alt="image" src="https://github.com/user-attachments/assets/58cb7d38-aec6-4db9-8a45-f48bec95e7b8" />
