@@ -44,7 +44,7 @@ Server와 Client간 정보를 주고 받을 때 지켜야하는 ‘약속’ 같
 
 초창기의 Web은 아래와 같은 html로 구성되어있었다.  
 
-![image.png](attachment:a22976b8-1dac-4994-a447-1bcf3732947a:image.png)
+<img width="880" height="268" alt="image" src="https://github.com/user-attachments/assets/89bb2396-1fe2-4732-8d35-b2b4e2e11bfc" />
 
 단순히 텍스트만 나열된 것이 아닌, hyperText를 따라 페이지를 이동할 수 있도록 정보를 제공한다.  
 HTML의 풀 명칭인 HyperText Markup Language 에서도 hyperText가 언급됨을 알 수 있다.  
@@ -64,3 +64,5 @@ HTML을 구성할 땐 `< >` 괄호를 사용하는데, ‘태그’라는 명칭
 이러한 태그는 여러 종류가 있으며, 웹 페이지의 구성 요소마다 태그안에 작성되는 텍스트가 달라진다.  
 
 # 실습결과
+
+<img width="1800" height="1500" alt="image" src="https://github.com/user-attachments/assets/0e1a33e9-050f-4b13-804a-6dc11049c675" />
