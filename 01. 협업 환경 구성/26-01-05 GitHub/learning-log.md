@@ -34,3 +34,22 @@
 ---
 
 # 실습 결과
+
+1. connected remote repository
+
+   <img width="2166" height="596" alt="image" src="https://github.com/user-attachments/assets/c220842d-11fc-4c78-895d-c393a69a519c" />
+
+2. pushed remote main branch
+
+   <img width="2586" height="292" alt="image" src="https://github.com/user-attachments/assets/eca6d902-071e-4b4e-9947-f7f4d5e8c1ad" />
+
+3. pulled remote repository
+
+   <img width="3830" height="2102" alt="image" src="https://github.com/user-attachments/assets/18534dc7-c897-4ac5-96ee-2f7417bd6901" />
+
+4. created branch
+
+   ![Uploading image.png…]()
+
+
+
