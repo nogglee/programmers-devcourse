@@ -76,6 +76,14 @@ HTTP module 사용 시 프로토콜 템플릿을 사용하여 화면에 데이�
 
 # 실습 결과
 
-1. start() 호출 시 이름 출력
+1. main page
+
+   <img width="3018" height="1856" alt="image" src="https://github.com/user-attachments/assets/f102870c-c1cb-4132-9e48-f51ab4eb4cd6" />
+
+2. start 함수 실행 코드
+
+   <img width="3018" height="1856" alt="image" src="https://github.com/user-attachments/assets/880fe7c9-2868-460f-924c-8cfec8af269a" />
+
+3. start() 함수 실행 결과
 
    <img width="882" height="444" alt="image" src="https://github.com/user-attachments/assets/2bfef824-b2fa-4422-a771-215bfe135fc7" />
