@@ -37,8 +37,8 @@ programmers-devcourse/
 ### 🧑🏻‍💻 Learning Log
 | 학습일자 | 주차 | 학습 주제 | 핵심 내용|
 |:---:|:---:|:---|:---|
-| 2025.12.30 | Week 1 | **마크다운과 버전관리** | 링크|
-| 2025.12.31 | Week 1 | **Git 사용법** | 링크|
+| 2025.12.30 | Week 0 | **마크다운과 버전관리** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)]([https://github.com/USERNAME/REPO](https://github.com/nogglee/programmers-devcourse/tree/main/01.%20%ED%98%91%EC%97%85%20%ED%99%98%EA%B2%BD%20%EA%B5%AC%EC%84%B1/25-12-30%20%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4%EA%B3%BC%20%EB%B2%84%EC%A0%84%EA%B4%80%EB%A6%AC))|
+| 2025.12.31 | Week 0 | **Git 사용법** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)]([https://github.com/USERNAME/REPO](https://github.com/nogglee/programmers-devcourse/tree/main/01.%20%ED%98%91%EC%97%85%20%ED%99%98%EA%B2%BD%20%EA%B5%AC%EC%84%B1/25-12-31%20Git))|
 | 2026.01.05 | Week 1| **GitHub 사용법** | 링크|
 | 2026.01.06 | Week 1| **GitHub로 협업하기** | 링크|
 | 2026.01.07 | Week 1| **협업툴 알아보기** | 링크|
