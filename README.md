@@ -59,7 +59,7 @@ programmers-devcourse/
 
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
 |:---:|:---:|:---|:---|
-| 2026.01.10 | Week 2 | **Node와 Express** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/)|
+| 2026.01.10 | Week 2 | **Node와 Express** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/02.%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98%20%EC%9D%B4%ED%95%B4/26-01-10%20Node%EC%99%80%20Express)|
 
 </div>
 </details>
