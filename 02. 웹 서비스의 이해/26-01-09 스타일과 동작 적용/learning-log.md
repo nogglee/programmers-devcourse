@@ -163,3 +163,12 @@ JS에서 사용 가능한 변수 선언 키워드는 총 3가지(var, let, const
 - const: 중복 선언 불가능. 재할당 불가능. 첫 선언 시 초기화 값을 반드시 입력해야 함.
 
 ## 실습결과
+
+1. myFunction code
+
+   <img width="589" height="357" alt="image" src="https://github.com/user-attachments/assets/e1617c19-5b08-4bbd-9ce5-8d8c08ab4bec" />
+
+2. popId result
+
+   <img width="895" height="881" alt="image" src="https://github.com/user-attachments/assets/3c8983de-20c2-4230-b4b7-9e5737c4d1d4" />
+
