@@ -75,10 +75,10 @@ DB에 새로운 데이터를 추가하거나 수정 및 삭제를 DBMS를 통해
     ```
 4. Table 생성
     ```shell
-    MariaDB [Tennis]> CREATE TABLE players 
+    MariaDB [Tennis]> CREATE TABLE member 
         -> (
-        ->  id VARCHAR(30)
-        ->  name VARCHAR(30)
+        ->  id VARCHAR(30),
+        ->  name VARCHAR(30),
         ->  pwd VARCHAR(30)
         -> );
 

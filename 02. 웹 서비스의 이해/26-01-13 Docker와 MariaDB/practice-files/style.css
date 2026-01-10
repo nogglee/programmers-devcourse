@@ -1,0 +1,127 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.title_section {
+    width: 100%;
+    max-width: 800px;
+    padding: 24px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title_section h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2a44;
+}
+
+.title_section a {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.title_section a:hover {
+    text-decoration: underline;
+}
+
+.card_img {
+    width: 200px;
+    height: 200px;
+}
+
+.card_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.card_item {
+    width: 220px;
+    padding: 20px 16px 24px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card_item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.card_button {
+    margin-top: 14px;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.card_button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.card_button:active {
+    transform: scale(0.98);
+}
+
+.order_table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order_table thead th {
+    background-color: #007bff;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 10px;
+}
+
+.order_table th,
+.order_table td {
+    padding: 12px 10px;
+    text-align: center;
+}
+
+.order_table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.order_table tbody tr:hover {
+    background-color: #e9f2ff;
+}
+
+.order_table td {
+    color: #333333;
+}
