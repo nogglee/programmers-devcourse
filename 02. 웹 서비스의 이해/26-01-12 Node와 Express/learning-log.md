@@ -82,7 +82,7 @@ HTTP module 사용 시 프로토콜 템플릿을 사용하여 화면에 데이�
 
 2. start 함수 실행 코드
 
-   <img width="3018" height="1856" alt="image" src="https://github.com/user-attachments/assets/880fe7c9-2868-460f-924c-8cfec8af269a" />
+   <img width="3272" height="2032" alt="image" src="https://github.com/user-attachments/assets/eeca528d-ec98-4e1e-b11b-e8157271e53a" />
 
 3. start() 함수 실행 결과
 
