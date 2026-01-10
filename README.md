@@ -13,7 +13,7 @@ programmers-devcourse/
 ├── major topics/
 │   ├── days and sub topics folders.  # 학습일자별 폴더
 │   │   ├── learning-log.md           # 학습 내용 정리 문서
-│   │   └── practice-codes            # 실습 코드
+│   │   └── practice-files/           # 실습 코드 폴더
 └── README.md                         # 프로젝트 정보 및 학습 목표 계획
 ```
 
