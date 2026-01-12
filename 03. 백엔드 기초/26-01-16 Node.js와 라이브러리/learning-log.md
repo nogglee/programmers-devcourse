@@ -55,7 +55,7 @@ Next.js는 React 기반의 프레임워크로, 서버 사이드 렌더링, 라�
 > **콜백 함수:**  
 > 함수의 매개변수로 변수 또는 값을 전달하는 것이 아니라, '함수 자체를 전달'하는 것을 의미한다.  
 
-아래 code는 figlet 라이브러리 사용 예시이다.
+아래 code는 figlet 라이브러리 사용 예시이다.  
 
 ```javascript
 figlet
@@ -108,6 +108,6 @@ function onRequest(request, response)
 http.createServer(onRequest).listen(8080);
 ```
 
-http 모듈의 createServer 함수는 요청이 들어올 때마다 실행할 함수를 인자로 받는다.
-여기서 onRequest 함수는 서버에 HTTP 요청이 도착했을 때 호출되는 콜백 함수이며,
-요청(request)과 응답(response)을 처리하는 역할을 한다.
+http 모듈의 createServer 함수는 요청이 들어올 때마다 실행할 함수를 인자로 받는다.  
+여기서 onRequest 함수는 서버에 HTTP 요청이 도착했을 때 호출되는 콜백 함수이며,  
+요청(request)과 응답(response)을 처리하는 역할을 한다.  
