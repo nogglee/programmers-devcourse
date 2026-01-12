@@ -22,7 +22,7 @@
 
 ---
 
-### 02. Node.js
+### 02. Node.js를 활용한 서버 구성법
 
 Node.js는 JavaScript를 스크립트 언어에 그치지 않고, 프로그래밍 언어 역할을 할 수 있도록 지원하는 플랫폼이다.  
 Node.js를 활용하여 JavaScript로 서버를 구축할 수 있다.  
