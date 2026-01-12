@@ -59,7 +59,7 @@ programmers-devcourse/
 
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
 |:---:|:---:|:---|:---|
-| 2026.01.12 | Week 2 | **Node와 Express** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/02.%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98%20%EC%9D%B4%ED%95%B4/26-01-10%20Node%EC%99%80%20Express)|
+| 2026.01.12 | Week 2 | **백엔드 기본 구성** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/02.%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98%20%EC%9D%B4%ED%95%B4/26-01-12%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88)|
 | 2026.01.13 | Week 2 | **Docker와 MariaDB** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/02.%20%EC%9B%B9%20%EC%84%9C%EB%B9%84%EC%8A%A4%EC%9D%98%20%EC%9D%B4%ED%95%B4/26-01-13%20Docker%EC%99%80%20MariaDB)|
 | 2026.01.14 | Week 2 | **GitHub Page** | [![Repo](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/nogglee/nogglee.github.io)|
 | 2026.01.15 | Week 2 | **API** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-15%20API)|
