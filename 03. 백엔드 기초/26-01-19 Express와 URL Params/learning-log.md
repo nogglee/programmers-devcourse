@@ -26,10 +26,10 @@ JSON은 객체의 모습을 텍스트로 변환하여 데이터를 하나씩 전
 ```javascript
 let Kia = 
 {
-    model: "Seltos",
-    color: "Black",
-    price: 30000000,
-    year: 2024
+    "model": "Seltos",
+    "color": "Black",
+    "price": 30000000,
+    "year": 2024
 };
 ```
 
