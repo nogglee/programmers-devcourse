@@ -131,13 +131,18 @@ params와 query의 차이를 정리하면 아래와 같다.
 
 # 실습결과
 
-1. object-api-demo.js | youtuber nickname으로 호출
-  <img width="550" height="256" alt="image" src="https://github.com/user-attachments/assets/acf72caf-1b4d-4c82-9c83-3957105d5f33" />
-  
-2. params-demo.js | 10보다 작은 수 입력, 10보다 큰 수 입력
-   <img width="614" height="234" alt="image" src="https://github.com/user-attachments/assets/9b92de33-a0fb-4bc8-9e50-88625a8488b9" />
-  <img width="693" height="338" alt="image" src="https://github.com/user-attachments/assets/258d90b4-7984-4bae-ba46-301f2d2f6879" />
+1. object-api-demo.js | youtuber nickname으로 호출  
 
-3. map-demo.js | 존재하는 product 호출, 존재하지 않는 product 호출
-   <img width="476" height="267" alt="image" src="https://github.com/user-attachments/assets/4212298e-7ddd-4064-a7dc-d16f4a80c845" />
-   <img width="391" height="216" alt="image" src="https://github.com/user-attachments/assets/70b5d27e-3307-4ef3-aa42-243165dd17f3" />
+  <img width="550" height="256" alt="image" src="https://github.com/user-attachments/assets/acf72caf-1b4d-4c82-9c83-3957105d5f33" />  
+  
+2. params-demo.js | 10보다 작은 수 입력, 10보다 큰 수 입력  
+
+  <img width="614" height="234" alt="image" src="https://github.com/user-attachments/assets/9b92de33-a0fb-4bc8-9e50-88625a8488b9" />  
+  
+  <img width="693" height="338" alt="image" src="https://github.com/user-attachments/assets/258d90b4-7984-4bae-ba46-301f2d2f6879" />  
+
+3. map-demo.js | 존재하는 product 호출, 존재하지 않는 product 호출  
+
+  <img width="476" height="267" alt="image" src="https://github.com/user-attachments/assets/4212298e-7ddd-4064-a7dc-d16f4a80c845" />  
+  
+  <img width="391" height="216" alt="image" src="https://github.com/user-attachments/assets/70b5d27e-3307-4ef3-aa42-243165dd17f3" />  
