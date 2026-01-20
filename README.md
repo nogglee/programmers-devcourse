@@ -75,6 +75,7 @@ programmers-devcourse/
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
 |:---:|:---:|:---|:---|
 | 2026.01.19 | Week 3 | **Express와 URL Params** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-19%20Express%EC%99%80%20URL%20Params)|
+| 2026.01.21 | Week 3 | **JavaScript 객체** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-21%20JavaScript%20%EA%B0%9D%EC%B2%B4)|
 
 </div>
 </details>
