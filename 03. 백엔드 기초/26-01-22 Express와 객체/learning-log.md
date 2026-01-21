@@ -6,6 +6,18 @@ Map은 key-value 구조의 데이터를 저장할 때 사용하는 객체이다.
 일반 객체의 경우 key가 문자열로만 저장되지만, Map은 key를 문자열로 변환하지 않고 참조한다.
 그렇기 때문에 key 또는 value에 다양한 타입(객체나 함수)을 사용할 수 있다.
 
+Map에서는 key-value 쌍을 삽입한 순서대로 저장되지만,
+배열처럼 인덱스로 값을 조회할 수는 없다. 반드시 key(unique)를 기준으로 접근해야한다.
+
+Map 객체의 메서드
+- `new Map()` : Map 객체를 생성
+- `map.set(key, value)` : key-value 쌍을 추가
+- `map.get(key)` : key를 기준으로 value를 반환
+- `map.has(key)` : key가 존재하는지 확인
+- `map.delete(key)` : key를 기준으로 value를 삭제
+- `map.clear()` : 모든 key-value 쌍을 삭제
+- `map.size` : 객체의 개수를 반환
+
 이번 실습에서는 유튜버 정보를 저장하는 Map을 만들었다.
 channelID를 key로 사용하고, 유튜버 정보가 담긴 객체를 value로 사용했다.
 
