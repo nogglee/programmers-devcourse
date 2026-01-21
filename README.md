@@ -2,7 +2,7 @@
 
 ### 🛠️ Tech Stack
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=react,ts,nodejs,git,github" />
+  <img src="https://skillicons.dev/icons?i=react,ts,nodejs,express,git,github" />
 </p>
 
 ---
