@@ -54,3 +54,17 @@ var id = 1
 app.use(express.json())
 app.post(...)
 ```
+---
+
+# 실습 결과
+
+1. 개별 유튜버 아이디 기반 조회
+   <img width="1789" height="536" alt="image" src="https://github.com/user-attachments/assets/96851b21-da01-44a5-ae2b-074a8fc53070" />
+
+2. 유튜버 등록
+   <img width="1791" height="522" alt="image" src="https://github.com/user-attachments/assets/105d5c62-6905-443a-a852-bd04551a70d5" />
+
+3. 유튜버 등록 후 개별 조회
+   <img width="1792" height="554" alt="image" src="https://github.com/user-attachments/assets/b801a556-f383-4fd7-8039-b5da1f50dfb1" />
+
+
