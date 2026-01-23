@@ -82,3 +82,13 @@ programmers-devcourse/
 </div>
 </details>
 
+<details>
+<summary><b>📅 Week 4 | 백엔드 기초: Node.js + Express 기본</b></summary>
+<div markdown="1">
+
+| 학습일자 | 주차 | 학습 주제 | 학습 내용|
+|:---:|:---:|:---|:---|
+| 2026.01.26 | Week 4 | **forEach문 알아보기** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-26%20forEach%EB%AC%B8%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)|
+
+</div>
+</details>
