@@ -69,6 +69,8 @@ programmers-devcourse/
 | 2026.01.22 | Week 3 | **Express와 객체** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-22%20Express%EC%99%80%20%EA%B0%9D%EC%B2%B4)|
 | 2026.01.23 | Week 3 | **POST와 미들웨어** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-23%20POST%EC%99%80%20%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4)|
 | 2026.01.26 | Week 4 | **forEach문 알아보기** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-26%20forEach%EB%AC%B8%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)|
+| 2026.01.27 | Week 4 | **forEach 대신 find** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-27%20forEach%20%EB%8C%80%EC%8B%A0%20find)|
+| 01.27 ~ 29 | Week 4 | **YOUTUBE-DEMO** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/YOUTUBE-DEMO)|
 
 </div>
 </details>
