@@ -37,7 +37,7 @@ programmers-devcourse/
 ### 🧑🏻‍💻 Learning Log
 
 <details>
-<summary><b>📅 Week 1 | OT & 포트폴리오 / 협업 환경 구성</b></summary>
+<summary><b>협업 환경 구성</b></summary>
 <div markdown="1">
 
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
@@ -54,7 +54,7 @@ programmers-devcourse/
 </details>
 
 <details>
-<summary><b>📅 Week 2 | 프로젝트: 데이터 기반 웹서비스의 개발자 포트폴리오 제작 & 백엔드 기초: Node.js + Express 기본</b></summary>
+<summary><b>백엔드 기초: Node.js + Express 기본</b></summary>
 <div markdown="1">
 
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
@@ -64,31 +64,33 @@ programmers-devcourse/
 | 2026.01.14 | Week 2 | **GitHub Page** | [![Repo](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/nogglee/nogglee.github.io)|
 | 2026.01.15 | Week 2 | **API** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-15%20API)|
 | 2026.01.16 | Week 2 | **Node.js와 라이브러리** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-16%20Node.js%EC%99%80%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)|
-
-</div>
-</details>
-
-<details>
-<summary><b>📅 Week 3 | 백엔드 기초: Node.js + Express 기본</b></summary>
-<div markdown="1">
-
-| 학습일자 | 주차 | 학습 주제 | 학습 내용|
-|:---:|:---:|:---|:---|
 | 2026.01.19 | Week 3 | **Express와 URL Params** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-19%20Express%EC%99%80%20URL%20Params)|
 | 2026.01.21 | Week 3 | **JavaScript 객체** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-21%20JavaScript%20%EA%B0%9D%EC%B2%B4)|
 | 2026.01.22 | Week 3 | **Express와 객체** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-22%20Express%EC%99%80%20%EA%B0%9D%EC%B2%B4)|
-| 2026.01.23 | Week 3 | **POST와 미들웨어** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-23%20POST%EC%99%80%20%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4)
+| 2026.01.23 | Week 3 | **POST와 미들웨어** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-23%20POST%EC%99%80%20%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4)|
+| 2026.01.26 | Week 4 | **forEach문 알아보기** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-26%20forEach%EB%AC%B8%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)|
 
 </div>
 </details>
 
 <details>
-<summary><b>📅 Week 4 | 백엔드 기초: Node.js + Express 기본</b></summary>
+<summary><b>백엔드 심화: 인증과 비동기처리</b></summary>
 <div markdown="1">
 
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
 |:---:|:---:|:---|:---|
-| 2026.01.26 | Week 4 | **forEach문 알아보기** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/03.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EA%B8%B0%EC%B4%88/26-01-26%20forEach%EB%AC%B8%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)|
+
+
+</div>
+</details>
+
+<details>
+<summary><b>Node.js 기반의 REST API 구현</b></summary>
+<div markdown="1">
+
+| 학습일자 | 주차 | 학습 주제 | 학습 내용|
+|:---:|:---:|:---|:---|
+
 
 </div>
 </details>
