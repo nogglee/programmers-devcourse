@@ -10,12 +10,43 @@ let db = new Map()
 var id = 1 // 초기화
 db.set(id++, { userId: 'user01', pwd: 'qwer1234!', userName: '홍길동' })
 
+function isPasswordMatch(user, userPwd) 
+{ 
+    return user.pwd === userPwd 
+}
+
+function isDuplicate(userId)
+{
+    let obj = {}
+    
+    db.forEach((user) => { if( user.userId === userId ){ obj = user } })
+
+    return obj
+}
+
+function isExist(obj) 
+{
+    if(Object.keys(obj).length) { return true }
+    else { return false }
+}
+
 // sign in
 app.post
 (
     '/signin', (req, res) => 
     {
-        const user = req.body
+        const userInput = req.body
+        let currentUser = {}
+        
+        if( userInput.userId && userInput.pwd ) { currentUser = isDuplicate(userInput.userId) }
+        else { res.status(400).json({ message : "아이디와 비밀번호 모두 입력해 주세요." }) }
+
+        if( isExist(currentUser)) 
+        { 
+          if(isPasswordMatch(currentUser, userInput.pwd)) { res.status(200).json({ message : `${currentUser.userName}님, 로그인이 완료되었습니다.` }) }  
+          else { res.status(400).json({ message : `비밀번호가 일치하지 않습니다.` });}
+        }
+        else { res.status(400).json({ message : `${userInput.userId}로 가입한 회원 정보가 없습니다.` })  }
         
     }
 )
