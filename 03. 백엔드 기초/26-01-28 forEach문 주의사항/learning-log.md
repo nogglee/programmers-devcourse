@@ -99,7 +99,7 @@ Object.keys(req.body).length === 0
 
 ---
 
-### route를 사용하는 이유
+### route를 사용법
 
 Express에서 route는 같은 URL 경로에 대한 여러 HTTP method를 하나로 묶어서 관리할 수 있다.  
 예를 들어 `/users` 라는 경로가 있다면, 아래와 같은 HTTP method가 있을 것이다.  
