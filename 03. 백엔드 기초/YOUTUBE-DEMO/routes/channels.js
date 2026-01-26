@@ -1,29 +1,34 @@
 const express = require('express')
-const app = express()
-app.listen(3000, console.log('🚀 3000 포트에서 서버 구동 중'))
-app.use(express.json())
+const router = express.Router()
+router.use(express.json())
 
 let db = new Map()
 var id = 1
 
-db.set(id++, { channelTitle: '채널A' })
-db.set(id++, { channelTitle: '채널B' })
+db.set(id++, { channelTitle: '채널A', userId: 'user01' })
+db.set(id++, { channelTitle: '채널B', userId: 'user01' })
 
-app.route('/channels')
+router.route('/')
     .get
     (
         (req, res) => 
         {
             // let channels = {}
-            let channels = []
+            var {userId} = req.body
 
-            if(db.size)
+            if(db.size && userId)
             {
+                
+                const channelByUser = isExist(userId)
+                
                 // db.forEach((channel, id) => { channels[id] = channel })
-                db.forEach((channel, id) => { channels.push(channel) })
-                res.status(200).json(channels)
+                
+                if( channelByUser.length ) { res.status(200).json(channelByUser) } 
+                else { notFoundChannel(res) }
+                
             }
-            else { res.status(404).json({ message: '등록된 유튜버가 없습니다.' }) }
+            else if( !userId ) { res.status(404).json({ message : '로그인이 필요한 페이지입니다.' }) }
+            else { res.status(404).json({ message: '등록된 채널이 없습니다.' }) }
 
         }
     )
@@ -41,7 +46,7 @@ app.route('/channels')
         }
     )
 
-app.route('/channels/:id')
+router.route('/:id')
     .get
     (
         (req, res) => 
@@ -70,7 +75,7 @@ app.route('/channels/:id')
                 db.set(id, channel)
                 res.status(200).json({ message : `채널명이 ${oldTitle}에서 ${newTitle} 로 변경되었습니다..` })
             }
-            else { res.status(404).json({ message : `채널 정보를 찾을 수 없습니다.` }) }
+            else { notFoundChannel(res) }
         }
     )
     
@@ -89,4 +94,24 @@ app.route('/channels/:id')
             else { res.status(400).json({ message : `id ${id}번은 등록되지 않은 유튜버입니다.` }) }
         }
     )
-    
+
+function isExist(userId) 
+{
+    let channels = []
+                
+    db.forEach
+    (
+        (channel) => 
+        { 
+            if( channel.userId == userId ) { channels.push(channel) }
+        }
+    )
+    return channels
+}
+
+function notFoundChannel(res)
+{
+    res.status(404).json({ message : '채널 정보를 찾을 수 없습니다.' })
+}
+
+module.exports = router
