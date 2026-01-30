@@ -6,39 +6,13 @@ DBMS 종류는 왜 나뉘어졌을까?
 데이터의 형태가 다양해지면서 모든 유형의 데이터를 '테이블' 형식으로만 관리하다보니, 확장성 / 유연성 / 성능 부분에서 한계가 왔다.  
 그래서 저장 방식별로 DBMS가 나뉘었으며, 각 유형별 특징은 아래와 같다.  
 
-**RDBMS**
-정합성이 중요한 비즈니스 데이터를 관리할 때 사용  
-ex. MariaDB, MySQL, Oracle, PostgreSQL  
-* 관계형 데이터베이스
-* 테이블 형태로 데이터를 관리
-* PK / FK를 이용하여 데이터 관계를 표현
-* SQL 사용
-
-**Document DB**
-구조가 자주 바뀌는 데이터를 관리할 때 사용  
-ex. MongoDB  
-* JSON 형태로 데이터를 관리
-* 유연한 스키마
-* 중첩 구조 가능
-
-**Key-Value DB**
-속도가 최우선일 때 사용  
-ex. Redis, DynamoDB  
-* 키-값 쌍으로 데이터를 저장
-* 데이터의 구조가 고정됨
-* 빠른 조회 속도
-
-**Search Engine DB**
-검색 속도가 최우선일 때 사용  
-ex. Elasticsearch, OpenSearch  
-* 인덱스를 이용한 빠른 검색
-* 텍스트 데이터의 검색이 최적화됨(형태소 분석)
-
-**Wide Column DB**
-대용량 데이터를 관리할 때 사용  
-ex. Cassandra, HBase  
-* 컬럼 단위로 데이터 저장
-* 분산 처리에 특화됨
+| 종류 | 특징 | 예시 | 상세설명 |
+|:---|:---|:---|:---|
+| **RDBMS** | 정합성이 중요한 비즈니스 데이터를 관리할 때 사용  | MariaDB, MySQL, Oracle, PostgreSQL  | 관계형 데이터베이스, 테이블 형태로 데이터를 관리, PK / FK를 이용하여 데이터 관계를 표현, SQL 사용 |
+| **Document DB** | 구조가 자주 바뀌는 데이터를 관리할 때 사용 | MongoDB | JSON 형태로 데이터를 관리, 유연한 스키마, 중첩 구조 가능 |
+| **Key-Value DB** | 속도가 최우선일 때 사용 | Redis, DynamoDB | 키-값 쌍으로 데이터를 저장, 데이터의 구조가 고정됨, 빠른 조회 속도 |
+| **Search Engine DB** | 검색 속도가 최우선일 때 사용 | Elasticsearch, OpenSearch | 인덱스를 이용한 빠른 검색, 텍스트 데이터의 검색이 최적화됨(형태소 분석) |
+| **Wide Column DB** | 대용량 데이터를 관리할 때 사용 | Cassandra, HBase | 컬럼 단위로 데이터 저장, 분산 처리에 특화됨 |
 
 ---
 
