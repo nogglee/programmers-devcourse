@@ -83,15 +83,70 @@ if (!errors.isEmpty()) {
 
 ---
 
-### 유효성 검사 미들웨어 분리
+### validate 미들웨어로 분리하기
 
-validator 로직이 길어질 경우, 별도 파일로 분리해서 재사용할 수 있다.  
+express-validator의 `body()` 들은 **값을 검사해서 에러를 쌓기만** 하고,  
+실제로 요청을 통과시킬지 말지는 판단하지 않는다.  
+그래서 별도의 `validate` 미들웨어를 만들어, 앞에서 모인 검증 결과를 한 번에 처리한다.  
 
-예:  
-- channelValidator.js
-- userValidator.js
+아래 케이스를 통해 사용법을 알아보자.  
+- 1번: 라우터 콜백 함수 안에서 `validationResult`까지 처리
+- 2번: `validationResult`를 미들웨어로 분리(하지만 next가 없으면 통과해도 못 넘어감)
+- 3번: `next`를 받아서 통과 시 다음 단계로 넘김
 
-위와 같이  도메인별로 관리하면, 라우터 코드가 훨씬 깔끔해진다.  
+```js
+// 1) 라우터 콜백 안에 validationResult까지 한 번에 처리한 형태
+//    동작은 하지만, 라우터 코드가 길어지고 재사용이 어렵다
+router.route('/')
+  .post
+  (
+    [
+      body('user_id').notEmpty().withMessage('로그인이 필요한 서비스입니다.').isInt(),
+      body('name').notEmpty().withMessage('채널명은 필수 입력 값입니다.')
+    ],
+    (req, res) => 
+    {
+      const err = validationResult(req)
+      if (!err.isEmpty()) { return res.status(400).json({ err: err.array() })}
+
+      conn.query(/* ... */)
+    }
+  )
+```
+
+```js
+// 2) validationResult 처리만 따로 '모듈화'한 validate 미들웨어
+//    문제: error가 발생하지 않았다면 다음 로직으로 못 넘어간다.
+const validate = (req, res) => 
+{
+  const err = validationResult(req)
+  if (!err.isEmpty()) { return res.status(400).json(err.array()) }
+}
+```
+
+```js
+// 3) next를 추가해 통과하면 다음 미들웨어/핸들러로 넘기는 형태
+const validate = (req, res, next) => 
+{
+  const err = validationResult(req)
+
+  if (err.isEmpty()) { return next() }
+  return res.status(400).json(err.array())
+}
+
+// 먼저 body()들로 에러를 쌓고 → 그 다음 validate가 결과를 판정해야 한다.
+router.route('/')
+  .post(
+    [
+      body('user_id').notEmpty().withMessage('로그인이 필요한 서비스입니다.').isInt(),
+      body('name').notEmpty().withMessage('채널명은 필수 입력 값입니다.'),
+      validate
+    ],
+    (req, res) => {
+      conn.query(/* ... */)
+    }
+  )
+```
 
 ---
 
