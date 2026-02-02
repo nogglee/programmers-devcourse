@@ -84,6 +84,7 @@ programmers-devcourse/
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
 |:---:|:---:|:---|:---|
 | 2026.01.30 | Week 4 | **RDBMS** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/04.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%8B%AC%ED%99%94/26-01-30%20RDBMS)|
+| 2026.02.02 | Week 5 | **SQL 제약조건** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/04.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%8B%AC%ED%99%94/26-02-02%20SQL%20%EC%A0%9C%EC%95%BD%EC%97%B0%EC%86%8C)|
 
 
 </div>
