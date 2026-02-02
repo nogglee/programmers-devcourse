@@ -1,35 +1,41 @@
 const express = require('express')
 const router = express.Router()
+const conn = require('../mariadb')
+
 router.use(express.json())
-
-let db = new Map()
-var id = 1
-
-db.set(id++, { channelTitle: '채널A', userId: 'user01' })
-db.set(id++, { channelTitle: '채널B', userId: 'user01' })
 
 router.route('/')
     .get
     (
         (req, res) => 
         {
-            // let channels = {}
-            var {userId} = req.body
-
-            if(db.size && userId)
+            const {user_id} = req.body
+            
+            if(user_id)
             {
-                
-                const channelByUser = isExist(userId)
-                
-                // db.forEach((channel, id) => { channels[id] = channel })
-                
-                if( channelByUser.length ) { res.status(200).json(channelByUser) } 
-                else { notFoundChannel(res) }
-                
+                conn.query
+                (
+                    'SELECT * FROM users WHERE id = ?', [user_id],
+                    function(err, results)
+                    {
+                        if(results.length) 
+                        {
+                            conn.query
+                            (
+                                'SELECT * FROM channels WHERE user_id = ?', [user_id],
+                                function(err, results)
+                                {
+                                    if(results.length) { res.status(200).json(results) } 
+                                    else { res.status(404).json({ message : '등록된 채널이 없습니다.' }) }      
+                                }
+                            )
+                        }
+                        else { res.status(404).json({ message : '회원 정보를 찾을 수 없습니다.' }) }
+                    }
+                )   
             }
-            else if( !userId ) { res.status(404).json({ message : '로그인이 필요한 페이지입니다.' }) }
-            else { res.status(404).json({ message: '등록된 채널이 없습니다.' }) }
-
+            else { res.status(404).json({ message : '로그인이 필요한 페이지입니다.' }) }
+            
         }
     )
 
@@ -37,12 +43,25 @@ router.route('/')
     (
         (req, res) => 
         {
-            if(req.body.channelTitle)
+            const {name, user_id} = req.body
+
+            if(user_id)
             {
-                db.set(id++, req.body)
-                res.status(201).json({ message: `${db.get(id - 1).channelTitle} 채널의 시작을 응원합니다!` })
+                if(name)
+                {
+                    conn.query
+                    (
+                        'INSERT INTO channels (name, user_id) VALUES (?, ?)', [name, user_id],
+                        function(err, results)
+                        {
+                            if(err) { res.status(500).json({ message: `DB 정보 전송에 실패했습니다.` }) }
+                            res.status(201).json({ message: `${name} 채널의 시작을 응원합니다!` })
+                        }
+                    )
+                }
+                else { res.status(400).json({ message: `채널 이름을 입력해 주세요.` }) }
             }
-            else { res.status(400).json({ message: `채널 이름을 입력해 주세요.` }) }
+            else { res.status(403).json({ message: `로그인이 필요한 서비스입니다.` }) }
         }
     )
 
@@ -51,11 +70,17 @@ router.route('/:id')
     (
         (req, res) => 
         {
-            let id = parseInt(req.params.id)
-            const youtuber = db.get(id)
-            
-            if(youtuber) { res.status(200).json(youtuber) }
-            else { res.status(404).json({ message : `id ${id}번은 등록되지 않은 유튜버입니다.` }) }
+            const id = parseInt(req.params.id)
+
+            conn.query
+            (
+                'SELECT * FROM channels WHERE id = ?', [id],
+                function(err, results)
+                {
+                    if(results.length) { res.status(200).json(results) }
+                    else { res.status(404).json({ message : `채널 정보를 찾을 수 없습니다.` }) }
+                }
+            )
         }
     )
     
@@ -63,19 +88,30 @@ router.route('/:id')
     (
         (req, res) => 
         {
-            let id = parseInt(req.params.id)
-            const channel = db.get(id)
-            const oldTitle = channel.channelTitle
+            const id = parseInt(req.params.id)
             
-            if(channel)
-            {
-                const newTitle = req.body.channelTitle // 존재하는 channel 일 때만 필요한 변수
-                channel.channelTitle = newTitle // channel 객체에 타이틀 뿐만 아니라 다른 value가 있다면? 하나하나 입력해줘야함. 원 객체에서 교체가 필요한 값만 교체 해주는 방식
+            conn.query
+            (
+                'SELECT * FROM channels WHERE id = ?', [id],
+                function(err, results)
+                {
+                    if(results.length)
+                    {
+                        const oldName = results[0].name
+                        const newName = req.body.name
 
-                db.set(id, channel)
-                res.status(200).json({ message : `채널명이 ${oldTitle}에서 ${newTitle} 로 변경되었습니다..` })
-            }
-            else { notFoundChannel(res) }
+                        conn.query
+                        (
+                            'UPDATE channels SET name = ? WHERE id = ?', [newName, id],
+                            function(err, results)
+                            {
+                                res.status(200).json({ message : `채널명이 ${oldName}에서 ${newName} 로 변경되었습니다.` })
+                            }
+                        )
+                    }
+                    else { res.status(404).json({ message : `채널 정보를 찾을 수 없습니다.` }) }
+                }
+            )
         }
     )
     
@@ -84,34 +120,27 @@ router.route('/:id')
         (req, res) => 
         {
             let id = parseInt(req.params.id)
-            const youtuber = db.get(id)
-            
-            if(youtuber)
-            {
-                db.delete(id)    
-                res.status(200).json({ message : `${youtuber.channelTitle} 채널이 삭제되었습니다. 그 동안 이용해주셔서 감사합니다.` })
-            }
-            else { res.status(400).json({ message : `id ${id}번은 등록되지 않은 유튜버입니다.` }) }
+
+            conn.query
+            (
+                'SELECT * FROM channels WHERE id = ?', [id],
+                function(err, results)
+                {
+                    if(results.length) 
+                    {
+                        const channelName = results[0].name
+
+                        conn.query
+                        (
+                            'DELETE FROM channels WHERE id = ?', [id],
+                            function(err, results) { res.status(200).json({ message : `${channelName} 채널이 삭제되었습니다. 그 동안 이용해주셔서 감사합니다.` }) }
+                        )
+                    }
+                    else { res.status(404).json({ message: '채널 정보가 없습니다.' }) }
+                }
+            )
         }
     )
 
-function isExist(userId) 
-{
-    let channels = []
-                
-    db.forEach
-    (
-        (channel) => 
-        { 
-            if( channel.userId == userId ) { channels.push(channel) }
-        }
-    )
-    return channels
-}
-
-function notFoundChannel(res)
-{
-    res.status(404).json({ message : '채널 정보를 찾을 수 없습니다.' })
-}
 
 module.exports = router
