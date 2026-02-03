@@ -87,7 +87,7 @@ programmers-devcourse/
 | 2026.02.02 | Week 5 | **SQL 제약조건** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/04.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%8B%AC%ED%99%94/26-02-02%20SQL%20%EC%A0%9C%EC%95%BD%EC%97%B0%EC%86%8C)|
 | 2026.02.03 | Week 5 | **TCP와 IP** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/04.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%8B%AC%ED%99%94/26-02-03%20TCP%20%EC%99%80%20IP)|
 | 2026.02.04 | Week 5 | **유효성 검사** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/04.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%8B%AC%ED%99%94/26-02-04%20유효성%20검사)|
-
+| 2026.02.05 | Week 5 | **JWT** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/04.%20%EB%B0%B1%EC%97%94%EB%93%9C%20%EC%8B%AC%ED%99%94/26-02-05%20JWT)|
 
 </div>
 </details>
