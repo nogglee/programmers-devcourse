@@ -1,7 +1,9 @@
-const express = require('express')
-const router = express.Router()
-const { body, param, validationResult } = require('express-validator')
-const conn = require('../mariadb')
+const express = require('express');
+const router = express.Router();
+const { body, param, validationResult } = require('express-validator');
+const conn = require('../mariadb');
+const jwt = require('jsonwebtoken');
+const dotenv = require('dotenv');
 
 const validate = (req, res, next) =>
 {
@@ -10,8 +12,9 @@ const validate = (req, res, next) =>
     else { return res.status(400).json({ err: err.array() }) }
 }
 
+dotenv.config();
 router.use(express.json())
-
+    
 router.route('/signin')
     .post
     (
@@ -37,8 +40,11 @@ router.route('/signin')
                     
                     if(isExisting)
                     {
-                        if(loginUser.password == password) { res.status(200).json({ message : `${loginUser.name}님, 로그인이 완료되었습니다.` }) }
-                        else { res.status(400).json({ message : `비밀번호가 일치하지 않습니다.` });}
+                        const token = jwt.sign({ email : loginUser.email, name : loginUser.name }, process.env.PRIVATE_KEY, { expiresIn : '5m', issuer : 'nogglee' })
+                        res.cookie("token", token, { httpOnly : true })
+
+                        if(loginUser.password == password) { res.status(200).json({ message : `${loginUser.name}님, 로그인이 완료되었습니다.` }); console.log(token); }
+                        else { res.status(403).json({ message : `비밀번호가 일치하지 않습니다.` });}
                     }
                     else { res.status(400).json({ message : `${email}로 가입한 회원 정보가 없습니다.` }) }
                 }
