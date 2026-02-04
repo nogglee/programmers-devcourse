@@ -100,7 +100,7 @@ programmers-devcourse/
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
 |:---:|:---:|:---|:---|
 | 2026.02.09 | Week 6 | **REST API 설계** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=notion)](https://verbose-baritone-4b4.notion.site/REST-API-2fce8fe23c0e806d95fcf64e1d563af9?source=copy_link)|
-| 2026.02.10 | Week 6 | **ERD 설계** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=mariadb)]()|
+| 2026.02.10 | Week 6 | **ERD 설계** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=mariadb)](https://dbdiagram.io/d/Book-Store-6968efcbd6e030a024266cd4)|
 
 
 </div>
