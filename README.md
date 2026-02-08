@@ -102,6 +102,7 @@ programmers-devcourse/
 | 2026.02.09 | Week 6 | **REST API 설계** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=notion)](https://verbose-baritone-4b4.notion.site/REST-API-2fce8fe23c0e806d95fcf64e1d563af9?source=copy_link)|
 | 2026.02.10 | Week 6 | **ERD 설계** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=mariadb)](https://dbdiagram.io/d/Book-Store-6968efcbd6e030a024266cd4)|
 | 2026.02.11 | Week 6 | **Express-generator** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-02-11%20Express-generator)|
+| 2026.02.12 | Week 6 | **crypto 모듈** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-02-12%20crypto%20%EB%AA%A8%EB%93%88)|
 | 02.11 ~ 03.05 | Week 6 ~ 8 | **BOOK-STORE-DEMO** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/book-store-demo)|
 
 
