@@ -104,6 +104,7 @@ programmers-devcourse/
 | 2026.02.11 | Week 6 | **Express-generator** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-02-11%20Express-generator)|
 | 2026.02.12 | Week 6 | **crypto 모듈** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-02-12%20crypto%20%EB%AA%A8%EB%93%88)|
 | 2026.02.27 | Week 7 | **Node.js 비동기** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-02-27%20Node.js%20%EB%B9%84%EB%8F%99%EA%B8%B0)|
+| 2026.03.04 | Week 7 | **토큰 검증과 예외처리** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-03-04%20%ED%86%A0%ED%81%B0%20%EA%B2%80%EC%A6%9D%EA%B3%BC%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)|
 | 02.11 ~ 03.05 | Week 6 ~ 8 | **BOOK-STORE-DEMO** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/book-store-demo)|
 
 
