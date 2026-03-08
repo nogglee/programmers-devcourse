@@ -107,7 +107,16 @@ programmers-devcourse/
 | 2026.03.04 | Week 7 | **토큰 검증과 예외처리** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-03-04%20%ED%86%A0%ED%81%B0%20%EA%B2%80%EC%A6%9D%EA%B3%BC%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)|
 | 02.11 ~ 03.05 | Week 6 ~ 8 | **BOOK-STORE-DEMO** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/book-store-demo)|
 
+</div>
+</details>
 
+<details>
+<summary><b>React + TypeScript</b></summary>
+<div markdown="1">
+
+| 학습일자 | 주차 | 학습 주제 | 학습 내용|
+|:---:|:---:|:---|:---|
+| 2026.03.09 | Week 9 | **JavaScript 기본 개념** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-09%20JavaScript%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90)|
 
 </div>
 </details>
