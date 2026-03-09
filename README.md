@@ -111,7 +111,7 @@ programmers-devcourse/
 </details>
 
 <details>
-<summary><b>React + TypeScript</b></summary>
+<summary><b>프론트 기초: React + TypeScript</b></summary>
 <div markdown="1">
 
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
