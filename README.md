@@ -117,6 +117,9 @@ programmers-devcourse/
 | 학습일자 | 주차 | 학습 주제 | 학습 내용|
 |:---:|:---:|:---|:---|
 | 2026.03.09 | Week 9 | **JavaScript 기본 개념** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-09%20JavaScript%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90)|
+| 2026.03.10 | Week 9 | **JavaScript 문법과 객체** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-10%20JavaScript%20%EB%AC%B8%EB%B2%95%EA%B3%BC%20%EA%B0%9D%EC%B2%B4)|
+| 2026.03.10 | Week 9 | **BUDGET-BOOK** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/budget-book)|
+
 
 </div>
 </details>
