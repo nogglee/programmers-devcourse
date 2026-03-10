@@ -171,6 +171,155 @@ const foo = () =>
 foo(); // 1 -> 2 -> 3
 ```
 
-# 언어 개념
+---
 
-# 내장 객체
+# 객체(object)
+
+객체는 속성을 가진 독립적 개체(entity)이며, 속성(property)으로 구성된 집합니다.
+JS를 구성하는 대부분이 '객체'이며, 객체는 아래와 같은 형태로 구성된다.
+
+```JS
+const 객체명 = { "속성1" : 값1, "속성2" : 값2 }
+```
+
+## 속성(property)
+
+속성에 접근하는 방법은 2가지이며, 아래와 같은 방법을 사용할 수 있다.
+
+**마침표 표기법**
+```JS
+const person = { name: 'John', age: 30 };
+console.log(person.name); // John
+```
+
+**대괄호 표기법**
+```JS
+const person = { name: 'John', age: 30 };
+console.log(person['name']); // John
+```
+
+## 메서드(method)
+
+속성에는 값 뿐만 아니라 함수도 할당 가능하며, 이러한 함수를 메서드(method)라고 한다.
+메서드는 다른 함수와 동일하게 정의하지만, '객체 속성에 할당'되어있다.
+
+```JS
+const person = {
+    name: 'John',
+    greet: function() { console.log('Hello') },
+    // ES6+에서 추가된 단축 구문
+    greet2() { console.log('Hello2') }
+};
+
+person.greet(); // Hello
+person.greet2(); // Hello2
+```
+
+## 객체 생성 방법
+
+**1. 리터럴 표기법**
+
+```JS
+const person = { name: 'John', age: 30 };
+```
+
+**2. 생성자 함수**
+
+```JS
+function Person(name, age) 
+{
+    this.name = name;
+    this.age = age;
+}
+
+const person = new Person('John', 30);
+```
+
+**3. Object.create() 메서드**
+
+```JS
+const person = { name: 'John', age: 30, getName: function() { console.log(this.name) } };
+
+const John = Object.create(person);
+John.name = 'John';
+John.getName(); // John
+```
+
+## 객체 속성 조작
+
+**1. 객체 속성 동적 생성**
+
+```JS
+const person = { name: 'John', age: 30 }
+person.gender = 'male'
+console.log(person) // { name: 'John', age: 30, gender: 'male' }
+```
+
+**2. 객체 속성 삭제**
+
+```JS
+const person = { name: 'John', age: 30, gender: 'male' }
+delete person.gender
+console.log(person) // { name: 'John', age: 30 }
+```
+
+**3. 객체 속성 나열**
+
+전제
+
+```JS
+const parent = { age: 55, gender: 'male' };
+function Child(name) { this.name = name; }
+Child.prototype = parent;
+const child = newChild('kim');
+```
+
+for...in
+
+```JS
+for (const key in child) { console.log(key) }
+// name -> age -> gender
+```
+
+Object.keys
+
+```JS
+console.log(Object.keys(child)); // ['name']
+```
+
+Object.getOwnPropertyNames
+
+```JS
+console.log(Object.getOwnPropertyNames(child)); // ['name']
+```
+
+## 객체간 비교와 복사
+
+JavaScript에서 객체는 **값(value)이 아니라 참조(reference)** 로 저장된다.
+즉, 변수에는 실제 객체가 저장되는 것이 아니라 **객체가 저장된 메모리 주소(참조값)** 가 저장된다.
+따라서 객체를 비교하거나 복사할 때는 일반적인 값 비교와 다른 동작이 발생한다.
+
+### 객체 비교
+
+객체를 `===` 또는 `==` 로 비교하면 **객체 내부 값이 아니라 참조값(메모리 주소)** 을 비교한다.
+
+```JS
+const a = { name: 'nogglee' };
+const b = { name: 'nogglee' };
+console.log(a === b); // false
+```
+
+두 객체의 속성 값은 같지만, 서로 **다른 객체이기 때문에 메모리 주소가 다르다.**
+따라서 비교 결과는 `false` 가 된다.
+
+### 객체 복사
+
+객체를 변수에 할당하면 객체 자체가 복사되는 것이 아니라 참조값만 복사된다.
+아래와 같은 경우 `b` 는 새로운 객체가 아니라 **a가 가리키는 동일한 객체를 참조**한다.
+a 와 b 는 동일한 객체를 가리키고 있기 때문에 b 의 속성을 수정하면 a 의 값도 함께 변경된다.
+
+```JS
+const a = { name: 'nogglee' };
+const b = a;
+console.log(a === b); // true
+```
