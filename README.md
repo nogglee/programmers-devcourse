@@ -123,6 +123,7 @@ programmers-devcourse/
 | 2026.03.12 | Week 9 | **C언어 기본 문법(1)** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-12%20C%EC%96%B8%EC%96%B4%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95(1))|
 | 2026.03.13 | Week 9 | **C언어 기본 문법(2)** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-13%20C%EC%96%B8%EC%96%B4%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95(2))|
 | 2026.03.16 | Week 10 | **TypeScript 기본 개념** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-16%20TypeScript%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90)|
+| 2026.03.17 | Week 10 | **TypeScript 기본 문법** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-16%20TypeScript%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95)|
 
 </div>
 </details>
