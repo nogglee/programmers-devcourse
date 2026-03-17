@@ -69,30 +69,30 @@ const myInstance = new MyStudent();
 myInstance.setName("nogglee");
 
 // 가져오기
-function getInfo(id : number) : Student
-{
-    return{
-        stdId: id,
-        stdName: "John",
-        // age: 20, --> 선택적 프로퍼티이므로 생략 가능
-        gender: GenderType.Male,
-        course: "Computer Science",
-        completed: false
-    };
-}
+// function getInfo(id : number) : Student
+// {
+//     return{
+//         stdId: id,
+//         stdName: "John",
+//         // age: 20, --> 선택적 프로퍼티이므로 생략 가능
+//         gender: GenderType.Male,
+//         course: "Computer Science",
+//         completed: false
+//     };
+// }
 
-let std = {
-    stdId : 3333,
-    stdName : "Jane",
-    gender : GenderType.Female,
-    course : "Mathematics",
-    completed : true
-};
+// let std = {
+//     stdId : 3333,
+//     stdName : "Jane",
+//     gender : GenderType.Female,
+//     course : "Mathematics",
+//     completed : true
+// };
 
 // 설정하기
-function setInfo(student : Student) : void
-{
-    console.log(student);
-}
+// function setInfo(student : Student) : void
+// {
+//     console.log(student);
+// }
 
-setInfo(std);
+// setInfo(std);
