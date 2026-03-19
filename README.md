@@ -125,6 +125,7 @@ programmers-devcourse/
 | 2026.03.16 | Week 10 | **TypeScript 기본 개념** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-16%20TypeScript%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90)|
 | 2026.03.17 | Week 10 | **TypeScript 기본 문법** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-16%20TypeScript%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95)|
 | 2026.03.18 | Week 10 | **React 기본 개념** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-18%20React%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90)|
+| 03.18 ~ 03.20 | Week 10 | **React 실습 프로젝트** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/my-app)|
 
 </div>
 </details>
