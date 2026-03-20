@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
+import TodoModal from './TodoModal';
 
 // 사용자 정의 타입
 type Todo = {
@@ -39,7 +40,6 @@ const TodoList : React.FC = () =>
     const [selectedTodo, setSelectedTodo] = useState<Todo | null>(null);
 
     const handleTodoClick = (todo : Todo) => {
-        // TODO: modal open + show desc
         setShowDetail(true);
         setSelectedTodo(todo);
     }
@@ -74,6 +74,7 @@ const TodoList : React.FC = () =>
                     }
                 </ul>
             </div>
+            <TodoModal show={showDetail} todo={selectedTodo} handleClose={handleCloseDetail}></TodoModal>
         </div>
     )
 }
