@@ -26,16 +26,71 @@ function App() {
 현재는 함수형 컴포넌트를 주로 사용하지만,  
 React 동작 원리 이해하거나 기존 코드 유지보수를 위해  
 클래스 컴포넌트를 알아야한다.  
-	
----
 
-# 상태란?
+## state란?
 
 React에서 상태는 **UI를 바꾸는 데이터**를 의미한다.  
 함수형 컴포넌트에서는 상태를 관리하기 위해 `useState` Hook을 사용한다.  
 
 ```ts
 const [count, setCount] = useState(0);
+```
+
+## props란?
+
+props는 부모 컴포넌트가 자식 컴포넌트에게 전달하는 데이터이다.  
+즉 컴포넌트 간의 데이터 전달을 위한 수단이다.  
+
+컴포넌트를 사용하는 이유 중 '재사용 가능'이란 특성을 살리려면  
+내부의 값을 직접 정의하는 것이 아니라,  
+하나의 틀을 만들어두고 외부로부터 값을 유동적으로 전달 받아야한다.  
+
+```ts
+<MyWeather weather="맑음">☀️</MyWeather>
+
+function MyWeather(props) {
+  return <div>{props.weather}</div>;
+}
+```
+
+위 예시를 보면, MyWeather 컴포넌트는 weather props로 날씨 값을 전달 받고 있다.  
+전달할 날씨가 다른 날씨라면 아래와 같이 값을 전달할 수 있다.  
+
+```ts
+<MyWeather weather="눈" />
+<MyWeather weather="비" />
+```
+
+아래와 같이 props를 구조 분해와 함께 사용하면 가독성을 개선할 수 있다.  
+
+```ts
+function MyWeather({ weather, children }) {
+  return <div>{weather}</div>;
+}
+```
+
+## 클래스 컴포넌트의 this
+
+this는 현재 클래스 인스턴스를 가리킨다.  
+
+> this.props → 전달받은 데이터  
+> this.state → 내부 상태  
+
+클래스 컴포넌트는 객체 기반으로 동작하기 때문에  
+컴포넌트 내부 데이터에 접근하기 위해 this가 필요하다.  
+(클래스 → 인스턴스 생성 → this로 접근)  
+
+```ts
+// 클래스 컴포넌트 예시
+class MyWeather extends Component<MyProps>{
+  render(){
+    return (
+      <div>
+        {this.props.weather}
+      </div>
+    )
+  }
+}
 ```
 
 ---
