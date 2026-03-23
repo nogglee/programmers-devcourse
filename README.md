@@ -105,7 +105,7 @@ programmers-devcourse/
 | 2026.02.12 | Week 6 | **crypto 모듈** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-02-12%20crypto%20%EB%AA%A8%EB%93%88)|
 | 2026.02.27 | Week 7 | **Node.js 비동기** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-02-27%20Node.js%20%EB%B9%84%EB%8F%99%EA%B8%B0)|
 | 2026.03.04 | Week 7 | **토큰 검증과 예외처리** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/05.%20REST%20API/26-03-04%20%ED%86%A0%ED%81%B0%20%EA%B2%80%EC%A6%9D%EA%B3%BC%20%EC%98%88%EC%99%B8%EC%B2%98%EB%A6%AC)|
-| 02.11 ~ 03.05 | Week 6 ~ 8 | **BOOK-STORE-DEMO** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/book-store-demo)|
+| 02.11 ~ 03.05 | Week 6 ~ 8 | **BOOK-STORE-BE** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/book-store-be)|
 
 </div>
 </details>
@@ -126,6 +126,18 @@ programmers-devcourse/
 | 2026.03.17 | Week 10 | **TypeScript 기본 문법** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-16%20TypeScript%20%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95)|
 | 2026.03.18 | Week 10 | **React 기본 개념** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/26-03-18%20React%20%EA%B8%B0%EB%B3%B8%20%EA%B0%9C%EB%85%90)|
 | 03.18 ~ 03.20 | Week 10 | **React 실습 프로젝트** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/06.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EA%B8%B0%EC%B4%88/my-app)|
+
+</div>
+</details>
+
+<details>
+<summary><b>프론트 심화: 상태 관리와 비동기 처리</b></summary>
+<div markdown="1">
+
+| 학습일자 | 주차 | 학습 주제 | 학습 내용|
+|:---:|:---:|:---|:---|
+| 03.23 ~ 03.26 | Week 11 | **TODO-LIST** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/todo-list)|
+| 03.27 ~ 04.10 | Week 12 ~ 13 | **BOOK-STORE-FE** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/book-store-fe)|
 
 </div>
 </details>
