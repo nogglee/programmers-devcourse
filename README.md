@@ -138,6 +138,7 @@ programmers-devcourse/
 |:---:|:---:|:---|:---|
 | 2026.03.23 | Week 11 | **Redux** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/07.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%8B%AC%ED%99%94/26-03-23%20Redux)|
 | 03.23 ~ 03.26 | Week 11 | **TODO-LIST** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/todo-list)|
+| 2026.03.30 | Week 12 | **CSS-in-JS** | [![Study](https://img.shields.io/badge/Study-GitHub%20Log-blue?logo=github)](https://github.com/nogglee/programmers-devcourse/tree/main/07.%20%ED%94%84%EB%A1%A0%ED%8A%B8%20%EC%8B%AC%ED%99%94/26-03-30%20CSS%20in%20JS)|
 | 03.27 ~ 04.10 | Week 12 ~ 13 | **BOOK-STORE-FE** | [![Project](https://img.shields.io/badge/Project-Mini-yellow?logo=github)](https://github.com/nogglee/book-store-fe)|
 
 </div>
